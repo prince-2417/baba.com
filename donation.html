@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Dera Dham ke seva karyon mein yogdan dein.">
+  <title>दान करें | Dera Dham</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="page-styles.css">
+  <link rel="stylesheet" href="donation-styles.css">
+</head>
+<body>
+  <div class="topline"><span>॥ ॐ श्री हनुमते नमः ॥</span><span class="topline-right">श्रद्धा • सेवा • संस्कार</span></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Dera Dham home"><span class="brand-mark">ॐ</span><span><b>DERA DHAM</b><em>श्री बालाजी धाम</em></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i><i></i></button>
+    <nav aria-label="Main navigation">
+      <a href="index.html">मुख्य पृष्ठ</a><a href="about.html">परिचय</a><a href="darshan.html">दर्शन</a><a href="events.html">कार्यक्रम</a><a href="seva.html">सेवा</a><a class="active" href="donation.html">दान करें</a><a href="gallery.html">गैलरी</a><a href="contact.html">संपर्क</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero donation-hero"><div><p>सेवा में आपका सहयोग</p><h1>दान करें</h1><p class="donation-hero-copy">आपका छोटा-सा योगदान भी लोक-कल्याण के कार्यों में सहारा बनता है।</p></div></section>
+    <section class="page-content donation-page">
+      <div class="donation-intro">
+        <div><p class="eyebrow">योगदान का माध्यम</p><h2>सेवा के लिए <i>अपना सहयोग दें</i></h2><p>अपनी इच्छा और सामर्थ्य के अनुसार दान राशि चुनें। भुगतान केवल आधिकारिक, सत्यापित माध्यम से ही करें।</p></div>
+        <aside class="donation-note"><strong>सुरक्षित दान</strong><p>भुगतान से पहले लाभार्थी का नाम और UPI ID अवश्य जाँचें। किसी अनजान व्यक्ति के कहने पर पैसे न भेजें।</p></aside>
+      </div>
+      <div class="donation-layout" data-upi-id="" data-beneficiary="Dera Dham">
+        <form class="donation-form" id="donation-form" novalidate>
+          <fieldset><legend>दान राशि चुनें</legend><div class="amount-options">
+            <label><input type="radio" name="amount" value="501" checked><span>₹501</span></label>
+            <label><input type="radio" name="amount" value="1100"><span>₹1,100</span></label>
+            <label><input type="radio" name="amount" value="2100"><span>₹2,100</span></label>
+            <label class="custom-amount"><input type="radio" name="amount" value="custom"><span>अन्य राशि</span></label>
+          </div></fieldset>
+          <label class="donation-field">अन्य राशि (₹)<input id="custom-amount" type="number" min="1" inputmode="numeric" placeholder="राशि लिखें" disabled></label>
+          <div class="donor-fields"><label>आपका नाम<input name="name" required autocomplete="name" placeholder="पूरा नाम"></label><label>मोबाइल नंबर<input name="phone" required inputmode="tel" autocomplete="tel" placeholder="मोबाइल नंबर"></label></div>
+          <label class="donation-field">ईमेल (वैकल्पिक)<input name="email" type="email" autocomplete="email" placeholder="name@example.com"></label>
+          <button class="button primary" type="submit">UPI से दान करें <span>→</span></button>
+          <p class="payment-status" id="payment-status" aria-live="polite">दान करने के लिए राशि और अपना विवरण भरें।</p>
+        </form>
+        <aside class="donation-details"><p class="eyebrow">आपका योगदान</p><h3>सेवा के कार्य</h3><ul><li>अन्नदान एवं भंडारा</li><li>धार्मिक और सांस्कृतिक आयोजन</li><li>समुदाय कल्याण की पहल</li></ul><div class="receipt-note"><strong>रसीद के लिए</strong><p>भुगतान पूरा होने पर UTR / transaction ID संभालकर रखें और Dera Dham से संपर्क करें।</p></div></aside>
+      </div>
+      <p class="donation-disclaimer">नोट: ऑनलाइन भुगतान शुरू करने से पहले इस पेज में Dera Dham की सत्यापित UPI ID या payment gateway लिंक जोड़ना आवश्यक है।</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script src="donation.js"></script>
+</body>
+</html>
